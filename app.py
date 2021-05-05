@@ -70,7 +70,7 @@ def my_form_post():
         target = get_predictions(age, sex, cp, trestbps, chol, fbs, restecg, thalach,
         exang, oldpeak, slope, ca, thal)
 
-        if target==1:
+        if target>0.5:
             sale_making = 'Disease present'
         else:
             sale_making = 'Disease absent'
