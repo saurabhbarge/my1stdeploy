@@ -20,9 +20,9 @@ with open('Models/RF_model.pkl', 'rb') as f:
 
 
 def get_predictions(age, sex, cp, trestbps, chol, fbs, restecg, thalach,
-       exang, oldpeak, slope, ca, thal, target):
+       exang, oldpeak, slope, ca, thal):
     mylist = [age, sex, cp, trestbps, chol, fbs, restecg, thalach,
-       exang, oldpeak, slope, ca, thal, target]
+       exang, oldpeak, slope, ca, thal]
     mylist = [float(i) for i in mylist]
     vals = [mylist]
 
